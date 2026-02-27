@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="420" viewBox="0 0 420 420" role="img" aria-label="Founder photo placeholder">
+  <defs>
+    <linearGradient id="bgFounder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6a4d12" />
+      <stop offset="100%" stop-color="#201608" />
+    </linearGradient>
+  </defs>
+  <rect width="420" height="420" fill="url(#bgFounder)" />
+  <circle cx="210" cy="162" r="74" fill="#f0d690" />
+  <path d="M90 360c8-67 59-110 120-110s112 43 120 110" fill="#d4af37" />
+  <text x="210" y="395" fill="#131313" font-size="26" font-family="Times New Roman, serif" text-anchor="middle">FOUNDER</text>
+</svg>

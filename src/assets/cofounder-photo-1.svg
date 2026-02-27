@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="420" viewBox="0 0 420 420" role="img" aria-label="Co-founder photo placeholder">
+  <defs>
+    <linearGradient id="bgCo1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3c2a0e" />
+      <stop offset="100%" stop-color="#0f0f0f" />
+    </linearGradient>
+  </defs>
+  <rect width="420" height="420" fill="url(#bgCo1)" />
+  <circle cx="210" cy="162" r="74" fill="#f6e3af" />
+  <path d="M88 360c10-67 61-110 122-110s112 43 122 110" fill="#c49a2d" />
+  <text x="210" y="395" fill="#19130a" font-size="22" font-family="Times New Roman, serif" text-anchor="middle">CO-FOUNDER</text>
+</svg>

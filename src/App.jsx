@@ -182,19 +182,19 @@ function HomePage({ onOpenContact, onOpenEmail }) {
             delivery workflow details.
           </p>
           <div className="proposal-actions">
-            <a
-              className="btn btn-secondary proposal-btn"
-              href="/DROPEASE_PROPOSAL.pdf"
-              target="_blank"
-              rel="noreferrer"
-            >
+              <a
+                className="btn btn-secondary proposal-btn"
+                href="DROPEASE_PROPOSAL.pdf"
+                target="_blank"
+                rel="noreferrer"
+              >
               View Proposal
             </a>
-            <a
-              className="btn btn-primary proposal-btn"
-              href="/DROPEASE_PROPOSAL.pdf"
-              download
-            >
+              <a
+                className="btn btn-primary proposal-btn"
+                href="DROPEASE_PROPOSAL.pdf"
+                download
+              >
               Download Proposal
             </a>
           </div>
@@ -325,7 +325,8 @@ export default function App() {
   const [customerMessage, setCustomerMessage] = useState("");
   const [isSendingEmail, setIsSendingEmail] = useState(false);
   const [emailStatus, setEmailStatus] = useState("");
-  const isFoundersPage = window.location.pathname === "/founders";
+  const pageParam = new URLSearchParams(window.location.search).get("page");
+  const isFoundersPage = pageParam === "founders";
 
   const openEmailPopup = () => {
     setIsContactOpen(false);
@@ -382,17 +383,17 @@ export default function App() {
   return (
     <div className="page-shell">
       <header className="topbar">
-        <a className="logo-wrap home-link" href="/">
+        <a className="logo-wrap home-link" href=".">
           <img src={dropEaseLogo} alt="Drop Ease logo" className="logo-image" />
           Drop Ease
         </a>
         <nav className="nav-links" aria-label="Main navigation">
           {isFoundersPage ? (
-            <a href="/">Home</a>
+            <a href=".">Home</a>
           ) : (
-            <a href="/founders">Founders</a>
+            <a href="?page=founders">Founders</a>
           )}
-          <a href="/#contact">Contact</a>
+          <a href={isFoundersPage ? "./#contact" : "#contact"}>Contact</a>
         </nav>
       </header>
 

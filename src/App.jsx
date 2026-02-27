@@ -334,7 +334,10 @@ export default function App() {
   const [isSendingEmail, setIsSendingEmail] = useState(false);
   const [emailStatus, setEmailStatus] = useState("");
   const pageParam = new URLSearchParams(window.location.search).get("page");
-  const isFoundersPage = pageParam === "founders";
+  const isFoundersPage =
+    pageParam === "founders" ||
+    window.location.pathname.toLowerCase().includes("/founders") ||
+    window.location.hash.toLowerCase() === "#founders";
 
   const openEmailPopup = () => {
     setIsContactOpen(false);
@@ -399,7 +402,7 @@ export default function App() {
           {isFoundersPage ? (
             <a href=".">Home</a>
           ) : (
-            <a href="?page=founders">Founders</a>
+            <a href="./?page=founders">Founders</a>
           )}
           <a href={isFoundersPage ? "./#contact" : "#contact"}>Contact</a>
         </nav>

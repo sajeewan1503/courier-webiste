@@ -392,7 +392,7 @@ export default function App() {
   };
 
   return (
-    <div className="page-shell">
+    <div className={`page-shell ${isFoundersPage ? "founders-page" : ""}`}>
       <header className="topbar">
         <a className="logo-wrap home-link" href=".">
           <img src={dropEaseLogo} alt="Drop Ease logo" className="logo-image" />

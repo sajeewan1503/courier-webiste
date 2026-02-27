@@ -724,6 +724,11 @@ p {
 
 .footer-copy {
   margin-top: 0.95rem;
+  font-size: 0.7rem;
+}
+
+.founders-page .footer-copy {
+  font-size: 0.7rem;
 }
 
 @keyframes rise {
@@ -927,6 +932,29 @@ p {
     text-align: center;
   }
 
+  .collaboration-card h3 {
+    font-size: 1rem;
+  }
+
+  .collaboration-card p {
+    font-size: 0.88rem;
+    line-height: 1.48;
+  }
+
+  .vision-mission-row h3 {
+    font-size: 1rem;
+  }
+
+  .vision-mission-row p {
+    font-size: 0.88rem;
+    line-height: 1.48;
+  }
+
+  .section-heading h2,
+  .cta h2 {
+    font-size: 1.65rem;
+  }
+
   .step-grid {
     overflow-x: auto;
     justify-content: flex-start;
@@ -959,6 +987,14 @@ p {
   .btn {
     width: 100%;
     min-height: 42px;
+  }
+
+  .contact-actions .btn {
+    font-size: 0.82rem;
+    width: auto;
+    min-width: 138px;
+    padding: 0.48rem 0.72rem;
+    min-height: 36px;
   }
 
   .proposal-actions .proposal-btn {

@@ -31,7 +31,7 @@ const owners = [
     bio: "Leads operations planning, rider coordination, and service quality to keep deliveries smooth every day.",
   },
   {
-    name: "Mr. Mathew Homega",
+    name: "Mr. Mathew Omega",
     role: "Co-Founder",
     photo: coFounderPhotoTwo,
     bio: "Drives growth partnerships, customer relationships, and expansion strategy for the next stage of Drop Ease.",

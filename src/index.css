@@ -964,6 +964,10 @@ p {
   .proposal-actions .proposal-btn {
     width: auto;
   }
+
+  .footer-copy {
+    font-size: 0.7rem;
+  }
 }
 
 @media (max-width: 430px) {

@@ -8,8 +8,8 @@ import serviceFast from "./assets/service-fast.svg";
 import serviceSupport from "./assets/service-support.svg";
 import serviceManagement from "./assets/service-management.svg";
 import founderPhoto from "./assets/founder.jpg";
-import coFounderPhotoOne from "./assets/co_founder1.jpeg";
-import coFounderPhotoTwo from "./assets/cofounder-photo-2.svg";
+import coFounderPhotoOne from "./assets/co_founder1.jpg";
+import coFounderPhotoTwo from "./assets/co_founder2.jpg";
 
 const stats = [
   { value: "12k+", label: "Parcels delivered monthly" },
@@ -31,7 +31,7 @@ const owners = [
     bio: "Leads operations planning, rider coordination, and service quality to keep deliveries smooth every day.",
   },
   {
-    name: "Co-Founder",
+    name: "Mr. Mathew Homega",
     role: "Co-Founder",
     photo: coFounderPhotoTwo,
     bio: "Drives growth partnerships, customer relationships, and expansion strategy for the next stage of Drop Ease.",
@@ -182,19 +182,19 @@ function HomePage({ onOpenContact, onOpenEmail }) {
             delivery workflow details.
           </p>
           <div className="proposal-actions">
-              <a
-                className="btn btn-secondary proposal-btn"
-                href="DROPEASE_PROPOSAL.pdf"
-                target="_blank"
-                rel="noreferrer"
-              >
+            <a
+              className="btn btn-secondary proposal-btn"
+              href="DROPEASE_PROPOSAL.pdf"
+              target="_blank"
+              rel="noreferrer"
+            >
               View Proposal
             </a>
-              <a
-                className="btn btn-primary proposal-btn"
-                href="DROPEASE_PROPOSAL.pdf"
-                download
-              >
+            <a
+              className="btn btn-primary proposal-btn"
+              href="DROPEASE_PROPOSAL.pdf"
+              download
+            >
               Download Proposal
             </a>
           </div>
@@ -264,7 +264,7 @@ function HomePage({ onOpenContact, onOpenEmail }) {
             className="btn btn-primary"
             onClick={onOpenContact}
           >
-            Details
+            Contact Details
           </button>
           <button
             type="button"
@@ -304,6 +304,14 @@ function FoundersPage() {
                 alt={`${owner.role} profile`}
                 className={`founder-photo ${
                   owner.role === "Founder" ? "founder-photo-founder" : ""
+                } ${
+                  owner.photo === coFounderPhotoOne
+                    ? "founder-photo-cofounder-one"
+                    : ""
+                } ${
+                  owner.photo === coFounderPhotoTwo
+                    ? "founder-photo-cofounder-two"
+                    : ""
                 }`}
               />
               <p className="eyebrow founder-role">{owner.role}</p>
@@ -416,13 +424,6 @@ export default function App() {
             <p>Phone: +94 71 872 2486</p>
             <p>WhatsApp: +94 71 872 2486</p>
             <p>Email: {contactEmail}</p>
-            <button
-              type="button"
-              className="btn btn-secondary"
-              onClick={openEmailPopup}
-            >
-              Send Email
-            </button>
             <button
               type="button"
               className="btn btn-primary"

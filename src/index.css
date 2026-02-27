@@ -524,6 +524,14 @@ p {
   object-position: center 30%;
 }
 
+.founder-photo-cofounder-one {
+  object-position: center 15%;
+}
+
+.founder-photo-cofounder-two {
+  object-position: center 5%;
+}
+
 .founder-role {
   margin-top: 0.75rem;
 }

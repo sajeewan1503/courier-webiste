@@ -786,43 +786,137 @@ p {
 }
 
 @media (max-width: 560px) {
+  .page-shell {
+    padding: 0.8rem 0.7rem 1.6rem;
+  }
+
   .topbar {
-    padding: 0.8rem 0.85rem;
+    padding: 0.65rem 0.75rem;
+    border-radius: 12px;
+    gap: 0.45rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo-wrap {
+    width: auto;
+    justify-content: flex-start;
+    font-size: 0.84rem;
+    gap: 0.4rem;
+    white-space: nowrap;
+  }
+
+  .logo-image {
+    width: 34px;
+    height: 34px;
   }
 
   .nav-links {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.5rem;
+    width: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    gap: 0.3rem;
   }
 
   .nav-links a {
-    font-size: 0.86rem;
-    padding: 0.45rem 0.5rem;
+    font-size: 0.66rem;
+    letter-spacing: 0.02em;
+    padding: 0.35rem 0.38rem;
+    min-height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    text-transform: none;
     border: 1px solid #4d3d16;
-    border-radius: 10px;
+    border-radius: 8px;
     text-align: center;
-    background: rgba(22, 22, 22, 0.85);
+    background: rgba(18, 18, 18, 0.92);
   }
 
   .hero {
-    padding: 1.4rem 0.9rem 1rem;
+    padding: 1.2rem 0.85rem 0.95rem;
     border-radius: 18px;
   }
 
+  .hero-layout {
+    justify-items: center;
+    text-align: center;
+    gap: 0.35rem;
+  }
+
+  .hero-side {
+    order: -1;
+    width: min(150px, 100%);
+    margin: 0 auto;
+    padding: 0.2rem;
+  }
+
+  .hero-side-logo {
+    border-radius: 12px;
+  }
+
+  .hero h1 {
+    font-size: clamp(1.95rem, 8.2vw, 2.45rem);
+    line-height: 1.08;
+    max-width: 100%;
+    margin-top: 0.25rem;
+  }
+
   .hero-text {
-    font-size: 0.98rem;
-    line-height: 1.62;
+    font-size: clamp(0.9rem, 3.5vw, 0.98rem);
+    line-height: 1.58;
+    max-width: 42ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-stats {
+    margin-top: 0.8rem;
+    gap: 0.7rem;
+  }
+
+  .hero-stats .stat-card {
+    width: min(420px, 100%);
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .service-grid {
     grid-template-columns: 1fr;
     gap: 0.7rem;
+    justify-items: center;
   }
 
   .founders-grid {
     grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .service-card,
+  .step-card,
+  .collaboration-card,
+  .founder-card {
+    width: min(420px, 100%);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .proposal-card,
+  .vision-mission-panel {
+    width: min(420px, 100%);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section-heading,
+  .section-subtext,
+  .collaboration-card p,
+  .vision-mission-row p {
+    text-align: center;
   }
 
   .step-grid {
@@ -842,19 +936,77 @@ p {
   }
 
   .section {
-    margin-top: 2.4rem;
+    margin-top: 2.15rem;
   }
 
   .cta {
-    margin-top: 2.6rem;
-    padding: 1.5rem 1rem;
+    margin-top: 2.3rem;
+    padding: 1.3rem 0.9rem;
+  }
+
+  .cta h2 {
+    font-size: clamp(1.35rem, 6vw, 1.65rem);
   }
 
   .btn {
     width: 100%;
+    min-height: 42px;
   }
 
   .proposal-actions .proposal-btn {
     width: auto;
+  }
+}
+
+@media (max-width: 430px) {
+  .page-shell {
+    padding: 0.7rem 0.6rem 1.4rem;
+  }
+
+  .topbar {
+    padding: 0.55rem 0.6rem;
+  }
+
+  .nav-links a {
+    font-size: 0.62rem;
+    padding: 0.32rem 0.3rem;
+    min-height: 28px;
+  }
+
+  .hero {
+    padding: 1.05rem 0.75rem 0.9rem;
+  }
+
+  .hero-side {
+    width: min(135px, 100%);
+  }
+
+  .hero-stats {
+    gap: 0.65rem;
+  }
+
+  .stat-card {
+    padding: 0.85rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .logo-wrap {
+    font-size: 0.88rem;
+    gap: 0.45rem;
+  }
+
+  .logo-image {
+    width: 38px;
+    height: 38px;
+  }
+
+  .nav-links a {
+    font-size: 0.58rem;
+    letter-spacing: 0.02em;
+  }
+
+  .hero h1 {
+    font-size: 1.85rem;
   }
 }
